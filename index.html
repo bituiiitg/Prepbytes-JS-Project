@@ -1,0 +1,523 @@
+<html>
+<head>
+<title>Digital Clock UI</title>
+<style>
+.a{
+	display:inline-block;
+	height:350px;
+	width:500px;
+	position:absolute;
+	top:40px;
+	left:80px;
+}
+.b{
+	display:inline-block;
+	height:55px;
+	width:170px;
+	position:absolute;
+	top:30px;
+	left:500px;
+	background-color:white;
+	padding:7px;
+	border-radius:10px;
+	color:gray;
+}
+.c1{
+	display:inline-block;
+	height:90px;
+	width:300px;
+	background-color:#8A11BF;
+	position:absolute;
+	top:80px;
+	left:900px;
+	border-radius:15px;
+}
+.c2{
+	display:inline-block;
+	height:90px;
+	width:370px;
+	background-color:#EDEDED;
+	position:absolute;
+	top:70px;
+	left:860px;
+	border-radius:15px;
+}
+.c3{
+	display:inline-block;
+	height:100px;
+	width:470px;
+	background-color:#FFFFFF;
+	position:absolute;
+	top:50px;
+	left:810px;
+	border-radius:15px;
+}
+.s1{
+	display:inline-block;
+	position:relative;
+	top:8px;
+	left:40px;
+	font-weight:bolder;
+	color:#3D087B;
+}
+.s2{
+	display:inline-block;
+	position:relative;
+	width:60px;
+	height:55px;
+	background-color:#F6E2FF;
+	top:20px;
+	left:74px;
+	font-size:23px;
+	text-align:center;
+}
+.s3{
+	display:inline-block;
+	position:relative;
+	width:60px;
+	height:55px;
+	background-color:#F6E2FF;
+	top:20px;
+	left:80px;
+	font-size:23px;
+	text-align:center;
+}
+.s4{
+	display:inline-block;
+	position:relative;
+	width:60px;
+	height:55px;
+	background-color:#F6E2FF;
+	top:20px;
+	left:87px;
+	font-size:23px;
+	text-align:center;
+}
+.s5{
+	display:inline-block;
+	position:relative;
+	width:35px;
+	height:30px;
+	background-image:url("AM_svg.svg");
+	top:6px;
+	left:103px;
+	font-size:23px;
+	text-align:center;
+	padding:12px;
+	color:white;
+}
+.s11{
+	position:relative;
+	top:10px;
+	left:79px;
+	font-size:40px;
+}
+.s12{
+	position:relative;
+	top:10px;
+	left:85px;
+	font-size:40px;
+}
+.d{
+	position:absolute;
+	width:600px;
+	height:400px;
+	background-color:white;
+	top:150px;
+	left:90px;
+	border-radius:20px;
+	display:inline-block;
+}
+
+.p1{
+	position:absolute;
+	top:25px;
+	left:20px;
+	background-image:url("wake_up.svg");
+	background-repeat:no-repeat;
+	height:100px;
+	width:100px;
+	display:inline-block;
+}
+.p2{
+	position:absolute;
+	top:31px;
+	left:100px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:130px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.p3{
+	position:absolute;
+	top:31px;
+	left:300px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:230px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+select{
+	width:250px;
+	padding:7px;
+	//border-color:silver;
+	border:1px solid silver;
+	border-radius:5px;
+}
+	
+.p21{
+	position:absolute;
+	top:120px;
+	left:20px;
+	background-image:url("lunch_time.svg");
+	background-repeat:no-repeat;
+	height:100px;
+	width:130px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.p22{
+	position:absolute;
+	top:130px;
+	left:100px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:130px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.p23{
+	position:absolute;
+	top:125px;
+	left:300px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:230px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+	
+	
+
+.p31{
+	position:absolute;
+	top:220px;
+	left:20px;
+	background-image:url("nap_time.svg");
+	background-repeat:no-repeat;
+	height:100px;
+	width:130px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.p32{
+	position:absolute;
+	top:230px;
+	left:100px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:130px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.p33{
+	position:absolute;
+	top:225px;
+	left:300px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:230px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+	
+	
+.p41{
+	position:absolute;
+	top:320px;
+	left:20px;
+	background-image:url("nap_time.svg");
+	background-repeat:no-repeat;
+	height:100px;
+	width:130px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.p42{
+	position:absolute;
+	top:330px;
+	left:100px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:130px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.p43{
+	position:absolute;
+	top:325px;
+	left:300px;
+	//background-image:url("wake_up.svg");
+	//background-repeat:no-repeat;
+	height:100px;
+	width:230px;
+	color:navy;
+	display:inline-block;
+	font-weight:bold;
+}
+.l1{
+	border: 1px solid;
+	height:50px;
+	color:gray;
+	position:absolute;
+	top:60px;
+	left:34px;
+}
+.l2{
+	border: 1px solid;
+	height:50px;
+	color:gray;
+	position:absolute;
+	top:160px;
+	left:34px;
+}
+.l3{
+	border: 1px solid;
+	height:50px;
+	color:gray;
+	position:absolute;
+	top:260px;
+	left:34px;
+}
+
+.e{
+	display:inline-block;
+	position:absolute;
+	top:570px;
+	left:90px;
+	height:20px;
+	width:551px;
+	background-color:#5F0089;
+	//text-align:center;
+	color:white;
+	font-family: calibri;
+	padding:27px;
+	font-size:25px;
+	border-radius:15px;
+	
+}
+.F{
+	display:inline-block;
+	position:absolute;
+	top:190px;
+	left:810px;
+	height:20px;
+	width:417px;
+	background-color:WHITE;
+	//text-align:center;
+	color:blue;
+	font-family: calibri;
+	padding:27px;
+	font-size:25px;
+	border-radius:15px;
+}
+.g{
+	background-color:white;
+	position:absolute;
+	top:300px;
+	left:810px;
+	height:350px;
+	width:470px;
+	border-radius:15px;
+}
+.g>img{
+	position:relative;
+	top:10px;
+}
+.h{
+	display:inline-block;
+	position:absolute;
+	top:665px;
+	left:90px;
+}	
+.h>button{
+	background-image: linear-gradient(to left, purple, navy);	
+	height:50px;
+	width:290px;
+	color:white;
+	font-size:20px;
+}		
+	
+button:hover:before{
+	
+	content:"party time!";
+}
+button:hover span{
+	display:none;
+}
+
+.i{
+	display:inline-block;
+	width:50px
+	height:50px;
+	background-color:#8A11BF;
+	position:absolute;
+	top:670;
+	left:465px;
+	padding:10px;
+	color:silver;
+	border-radius:15px;
+}
+.j{
+	display:inline-block;
+	width:50px
+	height:50px;
+	position:absolute;
+	top:740;
+	left:885px;
+	padding:10px;
+	color:silver;
+	border-radius:15px;
+}
+	
+				
+	
+	
+
+</style>
+</head>
+<body bgcolor="#3D087B">
+</body>
+<div class="a">
+<img src="clock_logo.png" height="20%" width="35%"/>
+</div>
+
+<div class="c1">
+</div>
+<div class="c2">
+</div>
+</div>
+<div class="c3">
+<span class="s1">TIME</span>
+<span class="s2">10<br>hours</span><span class="s11">:</span>
+<span class="s3">00<br>mins</span><span class="s12">:</span>
+<span class="s4">01<br>secs</span>
+<span class="s5">AM</span>
+</div>
+
+
+<div class="d">
+<span class="p1"></span>
+<span class="p2">Set wake up time</span>
+<span class="p3">
+<select>
+<option>8 AM - 9 AM</option>
+<option>9 AM - 10 AM</option>
+<option selected="selected">10 AM - 11 AM</option>
+<option>11 AM - 12 PM</option>
+</select>
+</span>
+
+<span class="p21"></span>
+<span class="p22">Set lunch time</span>
+<span class="p23">
+<select>
+<option selected="selected">12 PM - 1 PM</option>
+<option>1 PM - 2 PM</option>
+<option>2 PM - 3 PM</option>
+<option>3 PM - 4 PM</option>
+</select>
+</span>
+<span class="l1">
+</span>
+
+<span class="p31"></span>
+<span class="p32">Set nap time</span>
+<span class="p33">
+<select>
+<option selected="selected">4 PM - 5 PM</option>
+<option>5 PM - 6 PM</option>
+<option>6 PM - 7 PM</option>
+<option>7 PM - 8 PM</option>
+</select>
+</span>
+<span class="l2">
+</span>
+
+
+
+<span class="p41"></span>
+<span class="p42">Set night time</span>
+<span class="p43">
+<select>
+<option>8 PM - 9 PM</option>
+<option>9 PM - 10 PM</option>
+<option selected="selected">10 PM - 11 PM</option>
+<option>11 PM - 12 AM</option>
+<option>12 AM - 1 AM</option>
+<option>1 AM - 2 AM</option>
+<option>2 AM - 3 AM</option>
+<option>3 AM - 4 AM</option>
+<option>4 AM - 5 AM</option>
+</select>
+</span>
+<span class="l3">
+</span>
+</div> 
+
+<div class="e">
+GOOD MORNING!! WAKE UP !!
+</div>
+<div class="f">
+GRAB SOME HEALTHY BREAKFAST!!!
+</div>
+
+<div class="g">
+<img src="Component 30 – 1.svg" height="140%" width="100%"/>
+</div>
+
+<div class="h">
+<button><span>Set Alarm<span></button>
+</div>
+
+<div class="i">
+Wake Up Time : 10AM - 11AM <br>
+Lunch Time : 12PM - 1PM <br>
+Nap Time : 4PM - 5PM <br>
+Night Time : 8PM-9AM<br>
+</div>
+
+<div class="j">
+Note: Go to Artboard 3(Assets) to see all the assets used in this project
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</html>
